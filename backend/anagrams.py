@@ -7,6 +7,6 @@ class Anagrams:
     def check_anagram(self): 
         # the sorted strings are checked  
         if(sorted(self.s1) == sorted(self.s2)): 
-            return True 
+            return (True, "{0} and {1} are anagrams!".format(self.s1, self.s2))
         else: 
-            return False
+            return (False, "{0} and {1} are not anagrams!".format(self.s1, self.s2))
